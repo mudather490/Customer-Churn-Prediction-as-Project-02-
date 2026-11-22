@@ -1,0 +1,23 @@
+# Virtual environment and Python caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Test and coverage output
+.coverage
+coverage.xml
+htmlcov/
+
+# Local environment files
+.env
+!.env.example
+
+# The trained artifact (models/customer_churn_model.joblib) is intentionally
+# tracked: it is small, contains no personal data, and makes the project
+# runnable from a fresh clone and from Google Colab.
+# Do not commit unrelated or experimental model files.
+models/*.joblib
+!models/customer_churn_model.joblib

@@ -1,0 +1,6 @@
+# Normalize text files to LF so Windows, Linux, and Colab agree.
+* text=auto eol=lf
+
+# Binary artifacts must never be line-ending converted.
+*.joblib binary
+*.png binary
